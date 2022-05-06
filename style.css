@@ -8,7 +8,7 @@
 
 body {
 	font-family: 'Poppins', Arial, Helvetica, sans-serif;
-	max-width: 1020px;
+	max-width: 974px;
 	padding: 1em;
 	margin-left: auto;
 	margin-right: auto;
@@ -33,7 +33,9 @@ ul {
 header {
 	padding: 3em 0em;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
+	gap: 2em;
 }	
 
 header > * {
@@ -42,15 +44,54 @@ header > * {
 
 ul {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	gap: 7em;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 2em;
+}
+
+
+@media screen and (min-width: 364px) {
+	ul {
+		gap: 1em;
+	}
+
+	li:nth-child(2n) {
+		margin-top: 3em;
+	}
+}
+
+@media screen and (min-width: 512px) {
+	ul {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 3em;
+	}
+
+}
+
+@media screen and (min-width: 728px) {
+
+	
+	li:nth-child(2n) {
+		border: none;
+		margin-top: 0em;
+	}
+	
+	li:nth-child(2), li:nth-child(5) {
+		
+		margin-top: 3em;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	header {
+		flex-direction: row;
+	}
+	
 }
 
 
 
 .small-container {
 	
-	max-width: 500px;
 	display: flex;
 }
 
@@ -58,6 +99,7 @@ ul {
 	flex: 1;
 	position: relative;
 	height: 0;
+	
 	padding-bottom: 133%;
 }
 
