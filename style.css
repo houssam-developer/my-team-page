@@ -24,11 +24,11 @@ ul {
 	list-style: none;
 }
 
-img {
+/* img {
 	width: 200px;
 	height: 200px;
 	object-fit: cover;
-}
+} */
 
 header {
 	padding: 3em 0em;
@@ -40,23 +40,43 @@ header > * {
 	flex: 1 1 50%;
 }	
 
+ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 7em;
+}
+
+
+
 .small-container {
-	border: 2px solid orange;
+	
+	max-width: 500px;
 	display: flex;
 }
 
-.small-container > * {
+.container-aspect-ratio {
 	flex: 1;
+	position: relative;
+	height: 0;
+	padding-bottom: 133%;
 }
 
-.small-container img {
-	border: 2px solid red;
+.container-aspect-ratio img {
+	position: absolute;
+	top: 0em;
+	right: 0em;
+	bottom: 0em;
+	left: 0em;
+
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 
 .intro {
-	border: 2px solid blue;
 	position: relative;
+	min-width: 2em;
 }
 
 .intro p {
@@ -65,5 +85,6 @@ header > * {
 	position: absolute;
 	top: 0em;
 	left: 0em;
+	width: max-content;
 }
 
