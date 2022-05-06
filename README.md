@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://my-team-page-he.netlify.app">
       Demo
     </a>
     <span> | </span>
@@ -38,16 +38,14 @@
 
 ![My Image](img/screenshot-demo.png)
 
-This page of the member crew can be found here: "https://my-team-page-he.netlify.app/". Thanks to that challenge, I learn more tricks about css like how to vertically align a text or how to select a specific child of a component.
+This page of the member crew can be found here: "https://my-team-page-he.netlify.app". Thanks to that challenge, I learn more tricks about css like how to vertically align a text or how to select a specific child of a component.
 And I hope to make more beautifuls websites and become an expert in front-end developmemt :)
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [HTML]
+- [CSS]
 
 ## Features
 
